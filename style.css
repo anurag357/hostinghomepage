@@ -463,6 +463,7 @@ footer {
 .social-media h1 {
   font-size: 24px;
   font-weight: 500;
+ margin-left: 30px;
 }
 
 .social-media div {
@@ -476,9 +477,127 @@ footer {
   background: linear-gradient(to right bottom, #10c3ff, #0680ef);
   color: #ffffff;
   padding: 8px;
+  margin-left: 59px;
+  margin: 3px;
   text-align: center;
   font-size: 10px;
   height: 34px;
   width: 34px;
   border-radius: 17px;
+}
+
+
+@media only screen and (max-width: 740px) {
+  .nav-item {
+    display: none;
+  }
+
+  .sm-container {
+    grid-template-columns: 1fr;
+    grid-column-gap: 2em;
+    padding: 2rem;
+  }
+
+  .sm-container-item>h1 {
+    font-size: 1.5rem;
+  }
+
+  .sm-container-img img {
+    width: 70vw;
+    height: 12rem;
+    margin-top: 3rem;
+  }
+
+  .sm-container01 {
+    grid-template-columns: 2fr;
+    grid-column-gap: 2em;
+    padding: 2rem;
+  }
+
+  .sm-container-item01>h1 {
+    font-size: 1.5rem;
+  }
+
+  .sm-container-img01 img {
+    width: 70vw;
+    height: 12rem;
+  }
+
+  .sm-container02 {
+    grid-template-columns: 1fr;
+    grid-column-gap: 2em;
+    padding: 2rem;
+  }
+
+  .sm-container-item02 h1 {
+    font-size: 1.5rem;
+  }
+
+  .container03 {
+    grid-template-columns: 1fr;
+    grid-column-gap: 1em;
+    padding: 2rem;
+  }
+
+  .cards {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2em;
+    margin-top: -5px;
+  }
+
+  .pricing-section {
+    background: linear-gradient(to right bottom, #10c3ff, #be47b9);
+    height: 100%;
+    padding: 2% 6%;
+  }
+
+  .pricing-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    margin-top: 50px;
+    gap: 2rem;
+  }
+
+  .pricing-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    height: 600px;
+    width: 70%;
+  }
+
+  .testimonials-content {
+    grid-template-columns: 1fr;
+  }
+
+  .left-section p {
+    display: none;
+  }
+
+  footer {
+    padding: 6% 6% 1% 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .footer-text p {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #9298a9;
+    line-height: 1.5;
+    text-align: justify;
+    width: 463px;
+    padding: 10px;
+    padding-top: 10px;
+}
+
+}
+
+@media only screen and (max-width: 456px) {
+  .nav-button {
+    display: none;
+  }
 }
